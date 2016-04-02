@@ -43,4 +43,64 @@ public class Car {
         this.turningDirection = STRAIGHT;
     }
 
+    /**
+     * Returns the current moving direction of the Car.
+     *
+     * @return The current moving direction of the Car.
+     */
+    public CarMovingDirection getMovingDirection() {
+        return this.movingDirection;
+    }
+
+    /**
+     * Returns the current turning direction of the Car.
+     *
+     * @return The current turning direction of the Car.
+     */
+    public CarTurningDirection getTurningDirection() {
+        return this.turningDirection;
+    }
+
+    /**
+     * Makes the Car start moving forwards.
+     */
+    public void moveForwards() {
+        this.movingDirection = FORWARDS;
+    }
+
+    /**
+     * Makes the Car start moving backwards.
+     */
+    public void moveBackwards() {
+        this.movingDirection = BACKWARDS;
+    }
+
+    /**
+     * Makes the Car stop moving.
+     */
+    public void stopMoving() {
+        this.movingDirection = STATIONARY;
+    }
+
+    /**
+     * Makes the Car start turning to the left.
+     */
+    public void turnLeft() {
+        this.turningDirection = LEFT;
+    }
+
+    /**
+     * Makes the Car start turning to the right.
+     */
+    public void turnRight() {
+        this.turningDirection = RIGHT;
+    }
+
+    /**
+     * Makes the Car stop turning.
+     */
+    public void stopTurning(){
+        this.turningDirection = STRAIGHT;
+    }
+
 }

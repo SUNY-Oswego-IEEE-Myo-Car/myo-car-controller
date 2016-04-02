@@ -1,14 +1,31 @@
 plugins {
     id "java"
+    id "jacoco"
 }
 
 sourceSets {
     main.java.srcDir "src"
+    test.java.srcDir "test"
+}
+
+repositories {
+    mavenCentral();
+}
+
+dependencies {
+    testCompile "junit:junit:4.12"
 }
 
 jar {
     baseName = "myo-car-controller"
     manifest {
         attributes "Main-Class": "myo.car.controller.Main"
+    }
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true
+        html.enabled= true
     }
 }
