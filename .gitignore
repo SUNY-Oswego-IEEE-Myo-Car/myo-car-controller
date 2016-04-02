@@ -19,3 +19,14 @@ dist/
 nbdist/
 nbactions.xml
 .nb-gradle/
+
+# Vim files
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+Session.vim
+.netrwhist
+*~
+tags
+
+# Gradle files
+.gradle/
